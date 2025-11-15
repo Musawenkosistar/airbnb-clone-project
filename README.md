@@ -1,6 +1,4 @@
-# airbnb-clone-project
-
-# Team roles
+Team Roles
 
 1. Project Manager
 
