@@ -206,3 +206,55 @@ Provides property owners with a dedicated space to manage their listings and vie
 9. Admin Panel (if included in your project overview)
 
 Allows administrators to monitor platform activity, manage users, and resolve conflicts. This feature ensures platform stability and security. Admins can oversee the system and enforce policies to maintain high-quality service.
+
+API Security
+
+1. Authentication
+
+Authentication verifies the identity of users accessing the system.
+This ensures only legitimate users can log in, preventing unauthorized access to sensitive actions such as booking properties or managing listings.
+
+2. Authorization
+
+Authorization controls what each authenticated user is allowed to do.
+For example, hosts can edit their own properties but cannot modify properties owned by others. This prevents privilege misuse and protects users’ data and resources.
+
+3. Data Encryption (HTTPS)
+
+All communication between clients and the server is encrypted using HTTPS.
+Encryption protects sensitive information—such as passwords, payment details, and personal data—from being intercepted or tampered with during transmission.
+
+4. Rate Limiting
+
+Rate limiting restricts the number of API requests a user or IP address can make within a set period.
+This prevents abuse, brute-force attacks, and API overloading, ensuring the system remains stable and available for all users.
+
+5. Input Validation & Sanitization
+
+All user inputs are validated to prevent malicious data from entering the system.
+This defends against common attacks like SQL injection, cross-site scripting (XSS), and data corruption, protecting the database and application integrity.
+
+6. Secure Password Storage
+
+Passwords are never stored in plain text and are hashed using strong algorithms such as bcrypt or Argon2.
+This ensures that even if the database were compromised, user credentials remain protected.
+
+7. Token-Based Security (JWT)
+
+JSON Web Tokens (JWTs) are used to securely manage user sessions.
+JWTs allow stateless authentication and ensure that only authenticated users can access protected routes.
+
+8. Payment Security
+
+Payment-related APIs follow strict security measures to safeguard financial transactions.
+This includes secure payment gateways, encrypted card data handling, and verification checks to prevent fraud and payment manipulation.
+
+9. Logging & Monitoring
+
+API activity is logged and monitored for suspicious patterns.
+This helps detect security incidents early, enabling quick response to unauthorized access attempts or system misuse.
+
+10. CORS Protection
+
+Cross-Origin Resource Sharing (CORS) policies are enforced to control which domains can access the API.
+This prevents malicious websites from making unauthorized requests on behalf of users.
