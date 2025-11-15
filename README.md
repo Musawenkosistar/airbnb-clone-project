@@ -168,3 +168,41 @@ A Booking has one Payment, and a Payment is tied to one Booking (1-to-1).
 A Property can have many Reviews, but each Review is posted by one User (many-to-1).
 
 A User can write many Reviews, but each Review belongs to one Property (1-to-many).
+
+Feature Breakdown
+
+1. User Management
+
+Allows users to register, log in, and manage their profiles. This feature ensures secure authentication and supports different user roles, such as guests and property owners. It forms the foundation for personalized access and interactions across the platform.
+
+2. Property Management
+
+Enables property owners to create, update, and delete property listings. This feature includes uploading property details like location, pricing, description, and amenities. It allows hosts to manage their accommodations and make them available for booking.
+
+3. Booking System
+
+Allows guests to book available properties for selected dates. It manages reservation creation, date validation, and availability checks to ensure smooth booking. This feature also links users and properties, forming the core functionality of the platform.
+
+4. Payment Processing
+
+Handles payment transactions for bookings securely and efficiently. This includes processing payment methods, recording payment status, and linking payments to bookings. It ensures financial accuracy and a trustworthy experience for both guests and hosts.
+
+5. Reviews and Ratings
+
+Allows guests to leave reviews and ratings for properties they have stayed in. This feature improves transparency and helps future guests make informed decisions. It also allows hosts to receive feedback and improve their properties.
+
+6. Search and Filtering
+
+Provides users with the ability to search for properties based on criteria such as location, price range, dates, and amenities. This feature enhances the user experience by making it easier to find suitable accommodations. It ensures users can quickly narrow down results to meet their needs.
+
+7. Property Details View
+
+Displays detailed information for each property, including images, amenities, reviews, pricing, and availability. This feature helps users understand what the property offers before booking. By providing clarity, it increases trust and booking conversions.
+
+8. Host Dashboard
+
+Provides property owners with a dedicated space to manage their listings and view bookings. It allows hosts to track reservations, update details, and monitor performance. This feature streamlines property management and improves host efficiency.
+
+9. Admin Panel (if included in your project overview)
+
+Allows administrators to monitor platform activity, manage users, and resolve conflicts. This feature ensures platform stability and security. Admins can oversee the system and enforce policies to maintain high-quality service.
