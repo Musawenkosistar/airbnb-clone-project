@@ -77,3 +77,94 @@ Purpose: Handles incoming client requests, serves static files, and forwards API
 
 Version control and cloud repository hosting platform.
 Purpose: Tracks code changes, supports collaboration, and stores the project codebase.
+
+Database Design
+
+1. Users
+
+Represents individuals who use the platform as guests or property owners.
+Key Fields:
+
+id – unique identifier
+
+name – full name of the user
+
+email – unique email address for login
+
+role – defines whether the user is a guest or property owner
+
+created_at – date the account was created
+
+2. Properties
+
+Represents the accommodation listings created by property owners.
+Key Fields:
+
+id – unique identifier
+
+owner_id – references the user who owns the property
+
+title – property name/title
+
+location – property address or city
+
+price_per_night – cost of booking per night
+
+3. Bookings
+
+Represents reservations made by users for specific properties.
+Key Fields:
+
+id – unique identifier
+
+property_id – property being booked
+
+user_id – user who made the booking
+
+start_date – check-in date
+
+end_date – check-out date
+
+4. Payments
+
+Tracks payment information related to bookings.
+Key Fields:
+
+id – unique identifier
+
+booking_id – booking associated with the payment
+
+amount – total amount paid
+
+payment_method – e.g., credit card, PayPal, etc.
+
+status – e.g., pending, completed
+
+5. Reviews
+
+Represents user feedback for properties.
+Key Fields:
+
+id – unique identifier
+
+property_id – property being reviewed
+
+user_id – user leaving the review
+
+rating – numeric rating (e.g., 1–5)
+
+comment – written review
+
+Entity Relationships
+
+A User can own multiple Properties, but each Property belongs to one User (1-to-many).
+
+A User can make many Bookings, but a Booking belongs to one User (1-to-many).
+
+A Property can have multiple Bookings, but each Booking is linked to one Property (1-to-many).
+
+A Booking has one Payment, and a Payment is tied to one Booking (1-to-1).
+
+A Property can have many Reviews, but each Review is posted by one User (many-to-1).
+
+A User can write many Reviews, but each Review belongs to one Property (1-to-many).
