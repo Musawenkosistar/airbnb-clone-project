@@ -258,3 +258,21 @@ This helps detect security incidents early, enabling quick response to unauthori
 
 Cross-Origin Resource Sharing (CORS) policies are enforced to control which domains can access the API.
 This prevents malicious websites from making unauthorized requests on behalf of users.
+
+CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying the application. These pipelines ensure that every change pushed to the repository is thoroughly validated, reducing errors and improving the overall development workflow. CI/CD helps teams deliver updates faster, maintain high code quality, and ensure consistent deployments across all environments.
+
+CI/CD is crucial for this project because it enables seamless integration of new features, automatic detection of bugs, and reliable deployment of backend services. This reduces manual work for developers, increases productivity, and ensures the platform remains stable as new changes are introduced.
+
+Tools that can be used for the CI/CD pipeline include:
+
+GitHub Actions: Automates testing, building, and deploying the application directly from the repository.
+
+Docker: Ensures consistent application environments by packaging the app and its dependencies into containers.
+
+Docker Hub or GitHub Container Registry: Used to store and distribute Docker images used in deployment.
+
+Nginx: Can be used as a reverse proxy during deployment to serve the application efficiently.
+
+Cloud Platforms (e.g., AWS, Azure, Render, Heroku): Hosts the deployed application and manages runtime environments.
